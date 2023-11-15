@@ -3,7 +3,7 @@ import Vector from "../../shared/images/Vector.png";
 import Email from "../../shared/images/envelope-solid 1.png";
 import MapMarket from "../../shared/images/map-marker-alt-solid 1.png";
 import * as S from "./style";
-import { AsideUseCases } from "./usecases/use-cases";
+import { AsideUseCases } from "./usecases/";
 
 function Aside() {
   const { GetUsersData, dataUser, username } = AsideUseCases();
