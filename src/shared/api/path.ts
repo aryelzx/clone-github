@@ -1,6 +1,5 @@
 
 const PathUrl = () => {
-
   const githubUrl = `https://api.github.com/users/`
   return githubUrl
 
@@ -8,5 +7,5 @@ const PathUrl = () => {
 
 const baseURL = PathUrl()
 
-export { baseURL }
+export { baseURL };
 

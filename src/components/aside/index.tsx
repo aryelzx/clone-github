@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import { AsideUseCases } from "./use-cases";
+import { AsideUseCases } from "./usecases/use-cases";
 
 function Aside() {
 
-  const { GetUsersData, dataUser, usernameParams } = AsideUseCases()
+  const { GetUsersData, dataUser, username } = AsideUseCases()
 
   useEffect(() => {
     GetUsersData()
-  }, [usernameParams])
+  }, [username])
 
   return (
     <>

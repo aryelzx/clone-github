@@ -1,5 +1,5 @@
 import { AxiosInstance } from 'axios';
-import { http } from "../api/http";
+import { http } from '../../shared/api/http';
 import { GetUserDataInputDto } from "./getDataUser.dto";
 
 class GetUserData {

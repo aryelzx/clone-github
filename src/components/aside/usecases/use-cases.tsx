@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { useGetUserData } from "../../services/getDataUser.service";
-function AsideUseCases() {
-  const [dataUser, setDataUser] = useState()
+import { useGetUserData } from "../../../services/getDataUser/getDataUser.service";
 
-  const { username } = useParams();
+function AsideUseCases() {
+  const [dataUser, setDataUser] = useState();
+  const { username } = useParams()
+  console.log(username)
 
   const GetUsersData = async () => {
-
     try {
-      console.log(username, 'useeer')
-      const params = username;
-      const result = await useGetUserData.execute(params)
+      const result = await useGetUserData.execute(username)
       console.log(result)
       setDataUser(result)
     } catch (err) {
@@ -22,8 +20,8 @@ function AsideUseCases() {
   return (
     {
       GetUsersData,
-      dataUser,
       username,
+      dataUser,
     }
   )
 }
