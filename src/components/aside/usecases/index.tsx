@@ -6,12 +6,10 @@ import { useGetUserData } from "../../../services/getDataUser/getDataUser.servic
 function AsideUseCases() {
   const [dataUser, setDataUser] = useState<GetUserDataOutputDto>({} as GetUserDataOutputDto);
   const { username } = useParams()
-  console.log(username)
 
   const GetUsersData = async () => {
     try {
       const result = await useGetUserData.execute(username)
-      console.log(result)
       setDataUser(result)
     } catch (err) {
       console.log(err)

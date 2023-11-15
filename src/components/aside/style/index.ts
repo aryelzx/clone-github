@@ -92,6 +92,7 @@ export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  
 `;
 
 export const SectionText = styled.div`
@@ -137,7 +138,7 @@ export const Bio = styled.p`
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-
+  padding: 10px;
   margin-bottom: 41px;
 `
 export const Contact = styled.div`
