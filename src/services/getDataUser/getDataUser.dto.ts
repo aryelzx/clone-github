@@ -1,7 +1,3 @@
-interface GetUserDataInputDto {
-  username: string;
-}
-
 interface GetUserDataOutputDto {
   login: string;
   avatar_url: string;
@@ -18,5 +14,5 @@ interface GetUserDataOutputDto {
   following: number;
 }
 
-export type { GetUserDataInputDto, GetUserDataOutputDto };
+export type { GetUserDataOutputDto };
 

@@ -4,7 +4,7 @@ import { useGetRepoUser } from "../../../services/getRepoUser/getRepoUser.servic
 import { AsideUseCases } from "../../aside/usecases";
 
 function MainUseCases() {
-  const [repos, setRepos] = useState<GetRepoUserOutputDto[]>([]);
+  const [repos, setRepos] = useState<GetRepoUserOutputDto[]>([])
 
   const { username } = AsideUseCases();
 

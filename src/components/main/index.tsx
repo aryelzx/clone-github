@@ -20,7 +20,7 @@ function Main() {
         <S.Body>
           <S.Options>
             {OptionsNavMain.map((options) => (
-              <p>{options}</p>
+              <p key={options}>{options}</p>
             ))}
           </S.Options>
           <S.Title>
@@ -28,21 +28,20 @@ function Main() {
           </S.Title>
           <S.RepositoriesContainer>
             {repos.map((repo) => (
-              <>
-                <S.CardRepositorie onClick={() => navigate(`${repo.html_url}`)}>
-                  <S.CardTitle>
-                    {repo.name}
-                  </S.CardTitle>
-                  <S.CardDescription>
-                    {repo.description}
-                  </S.CardDescription>
-                  <S.CardLanguage>
-                    <S.Pointer />
-                    {repo.language}
-                  </S.CardLanguage>
-                </S.CardRepositorie>
-              </>
-              // <p>{repo.name}</p>
+              <S.CardRepositorie
+                key={repo.id}
+                onClick={() => navigate(`${repo.html_url}`)}>
+                <S.CardTitle>
+                  {repo.name}
+                </S.CardTitle>
+                <S.CardDescription>
+                  {repo.description}
+                </S.CardDescription>
+                <S.CardLanguage>
+                  <S.Pointer />
+                  {repo.language}
+                </S.CardLanguage>
+              </S.CardRepositorie>
             ))}
           </S.RepositoriesContainer>
         </S.Body>

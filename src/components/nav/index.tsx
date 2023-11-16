@@ -14,7 +14,7 @@ function Nav() {
       </S.Search>
       <S.Navbar>
         {NavbarOptions.map((option) => (
-          <S.Options>
+          <S.Options key={option}>
             {option}
           </S.Options>
         ))}
