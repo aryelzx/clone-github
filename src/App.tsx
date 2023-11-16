@@ -8,7 +8,7 @@ function App() {
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Redirect />} />
-        <Route path={`users/:username`} element={<Home />} />
+        <Route path={`/users/:username`} element={<Home />} />
       </Routes>
     </Router>
   )
