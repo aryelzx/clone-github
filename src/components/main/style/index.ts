@@ -2,11 +2,12 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  max-height: 100%;
+  height: 100%;
 `;
 
 export const Body = styled.div`
   width: 100%;
+  height: 100vh;
 `;
 
 export const Options = styled.div`
@@ -15,7 +16,7 @@ export const Options = styled.div`
   justify-content: center;
   margin-top: 2rem;
   color: rgba(22, 25, 26, 0.70);
-  font-family: Poppins;
+  
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +31,7 @@ export const Options = styled.div`
 export const Title = styled.p`
 color: rgba(22, 25, 26, 0.50);
 padding: 2rem;
-font-family: Poppins;
+
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -39,16 +40,14 @@ line-height: 15px; /* 93.75% */
 
 export const RepositoriesContainer = styled.div`
  width: 100%;
- max-height: 350px;
- 
+ max-height: calc(100% - 350px);
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  justify-items: center;
-
  padding: 1rem;
  gap: 15px;
 
- overflow-y: scroll;
+ overflow-y: auto;
  scroll-behavior: smooth;
 `;
 
@@ -73,7 +72,7 @@ export const CardRepositorie = styled.div`
 export const CardTitle = styled.p`
   word-break: break-all;
   color: #FF8412;
-  font-family: Poppins;
+  
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -83,7 +82,7 @@ export const CardTitle = styled.p`
 export const CardDescription = styled.p`
   color: rgba(22, 25, 26, 0.70);
 
-  font-family: Poppins;
+  
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
@@ -103,7 +102,7 @@ export const CardLanguage = styled.p`
   gap: 8px;
   color: #16191A;
 
-  font-family: Poppins;
+  
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
