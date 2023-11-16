@@ -1,11 +1,13 @@
 import { Aside } from "../aside";
+import Main from "../main";
+import * as S from "./style";
 
 function Home() {
   return (
-    <>
+    <S.Content>
       <Aside />
-      <p>HOMEE</p>
-    </>
+      <Main />
+    </S.Content>
   )
 }
 
