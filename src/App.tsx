@@ -7,8 +7,8 @@ function App() {
     <Router>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Redirect />} />
-        <Route path={`/users/:username`} element={<Home />} />
+        <Route path="*" element={<Redirect />} />
+        <Route path="users/:username" element={<Home />} />
       </Routes>
     </Router>
   )
